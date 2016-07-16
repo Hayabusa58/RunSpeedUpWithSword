@@ -44,8 +44,6 @@ public class RunSpeedUpWithSwordEventHandler {
 	/*
 	 * 剣以外を持っていた・何も持っていない場合0を返す
 	 * 木の剣を持っていた場合1，石の剣を持っていた場合2，鉄の剣を持っていた場合3，金の剣を持っていた場合4，ダイアモンドの剣を持っていた場合5を返す
-	 * 
-	 * 
 	 */
 	int checkKindsOfSwords(EntityPlayer entP, ItemStack item){
 		if(!(entP == null) && !(item == null)){
