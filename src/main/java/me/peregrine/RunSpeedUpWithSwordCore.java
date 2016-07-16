@@ -5,6 +5,8 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ChatComponentTranslation;
 
 /* The main class this mod.
  * @auther Hayabusa
@@ -20,4 +22,12 @@ public class RunSpeedUpWithSwordCore {
 	public static void init(FMLInitializationEvent event){
 		FMLCommonHandler.instance().bus().register(eh);
 	}
+
+	public void DebugMessage(Object obj, EntityPlayer entP){
+		if(!(entP == null)){
+			String message = obj.toString();
+			ChatComponentTranslation chat = new ChatComponentTranslation(message);
+			entP.addChatMessage(chat);
+		}
+}
 }
