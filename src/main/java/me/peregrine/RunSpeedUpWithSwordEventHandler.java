@@ -15,7 +15,8 @@ public class RunSpeedUpWithSwordEventHandler {
 		//EntityPlayerMP entMP = event.
 		ItemStack helditem = entP.getHeldItem();
 		if(!(entP == null) && this.isCurrentItemSwords(entP, helditem)){
-			RunSpeedUpWithSwordCore.instance.DebugMessage("Your item is sword.", entP);
+			/*Memo:初期値0.1F*/
+			//entP.capabilities.setPlayerWalkSpeed(10f);
 		}
 	}
 
