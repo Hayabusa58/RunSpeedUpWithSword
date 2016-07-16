@@ -1,0 +1,1 @@
+This is a Minecraft mod. Speed up player run speed when he has a Sword.
