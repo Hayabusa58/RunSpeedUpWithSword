@@ -1,0 +1,22 @@
+[
+  {
+    "description":"Speeeeed up!!!",
+    "parent":"",
+    "logoFile":"",
+    "credits":"Hayabusa",
+    "dependencies":[],
+    "modid":"me.peregrine.runspeedupwithsword",
+    "mcversion":"1.7.10",
+    "screenshots":[],
+    "authorList":[
+      "Hayabusa"
+    ],
+    "name":"RunSpeedUpWithSword",
+    "url":"",
+    "updateUrl":"",
+    "version":"1.0.0",
+    "requiredMods":[
+      "Minecraft Forge1.7.10 10.13.0.1558"
+    ]
+  }
+]
