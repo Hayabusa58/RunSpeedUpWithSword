@@ -12,9 +12,7 @@ public class RunSpeedUpWithSwordEventHandler {
 	public void onPlayerTick(TickEvent.PlayerTickEvent event){
 		//System.out.println("test");
 		EntityPlayer entP = event.player;
-		//EntityPlayerMP entMP = event.
 		ItemStack helditem = entP.getHeldItem();
-		
 		if(!(entP == null) && !(this.checkKindsOfSwords(entP, helditem) == 0)){
 			/*Memo:初期値0.1F*/
 			//必ず最初に初期化する
@@ -28,13 +26,13 @@ public class RunSpeedUpWithSwordEventHandler {
 				entP.capabilities.setPlayerWalkSpeed(walkspeed * 2f);
 			}else if (this.checkKindsOfSwords(entP, helditem) == 3) {
 				//鉄の剣を持っていた場合，移動速度を2.5倍にする
-				entP.capabilities.setPlayerWalkSpeed(walkspeed * 2.5f); 
+				entP.capabilities.setPlayerWalkSpeed(walkspeed * 2.5f);
 			}else if (this.checkKindsOfSwords(entP, helditem) == 4) {
 				//金の剣を持っていた場合，移動速度を3倍にする
-				entP.capabilities.setPlayerWalkSpeed(walkspeed * 3f); 
+				entP.capabilities.setPlayerWalkSpeed(walkspeed * 3f);
 			}else if (this.checkKindsOfSwords(entP, helditem) == 5) {
 				//ダイヤモンドの剣を持っていた場合，移動速度を6倍にする（仮仕様）
-				entP.capabilities.setPlayerWalkSpeed(walkspeed *6f); 
+				entP.capabilities.setPlayerWalkSpeed(walkspeed *6f);
 			}
 		}else{
 			entP.capabilities.setPlayerWalkSpeed(0.1F);

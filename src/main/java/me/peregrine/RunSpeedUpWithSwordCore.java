@@ -29,5 +29,5 @@ public class RunSpeedUpWithSwordCore {
 			ChatComponentTranslation chat = new ChatComponentTranslation(message);
 			entP.addChatMessage(chat);
 		}
-}
+	}
 }
