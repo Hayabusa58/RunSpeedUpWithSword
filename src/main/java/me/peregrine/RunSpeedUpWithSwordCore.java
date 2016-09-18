@@ -14,7 +14,7 @@ import java.io.File;
 /* The main class this mod.
  * @auther Hayabusa
  */
-@Mod(name = "RunSpeedUpWithSword", modid = "me.peregrine.runspeedupwithsword", version = "MC1.7.10_1.0.0")
+@Mod(name = "RunSpeedUpWithSword", modid = "me.peregrine.runspeedupwithsword", version = "MC1.7.10_1.1.0")
 public class RunSpeedUpWithSwordCore {
 	@Instance("me.peregrine.runspeedupwithsword")
 	public static RunSpeedUpWithSwordCore instance;
