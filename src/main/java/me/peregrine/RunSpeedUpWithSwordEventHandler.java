@@ -15,7 +15,7 @@ public class RunSpeedUpWithSwordEventHandler {
         ItemStack helditem = entP.getHeldItem();
 
         if (!(entP == null) && !(this.checkKindsOfSwords(entP, helditem) == 0)) {
-            RunSpeedUpWithSwordCore.instance.DebugMessage("ゲームモード:サバイバル，所持物：剣", entP);
+            //RunSpeedUpWithSwordCore.instance.DebugMessage("ゲームモード:サバイバル，所持物：剣", entP);
 			/*Memo:初期値0.1F*/
             //必ず最初に初期化する
             entP.capabilities.setPlayerWalkSpeed(0.1F);
@@ -45,7 +45,7 @@ public class RunSpeedUpWithSwordEventHandler {
 //		}
 
         if (entP.capabilities.isCreativeMode && (entP.capabilities.isFlying) && !(entP == null) && !(this.checkKindsOfSwords(entP, helditem) == 0)) {
-            RunSpeedUpWithSwordCore.instance.DebugMessage("ゲームモード：クリエイティブ，所持物：剣，浮遊状態", entP);
+            //RunSpeedUpWithSwordCore.instance.DebugMessage("ゲームモード：クリエイティブ，所持物：剣，浮遊状態", entP);
 			/*Memo:初期値0.05F*/
             //必ず最初に初期化する
             entP.capabilities.setFlySpeed(0.05F);
